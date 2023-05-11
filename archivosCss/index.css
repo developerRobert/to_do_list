@@ -117,18 +117,23 @@ body{
     height: 90%;
     box-shadow: 0 1px 4px white;
     border-radius: 2px;
+    text-align: center;
 }
 .hora_cont{
     width: 80%;
     height: 100%;
 }
 .fecha_spans,.hora_span{
-    font-size: 23px;
+    font-size: 20px;
     color: white;  
+    text-align: center;
     /* border: var(--bor); */
 }
-.hora_span{
-    font-size: 50px;
+.hora_span,.puntos_span{
+    font-size: 30px;
+}
+.puntos_span{
+    color: white;
 }
 .To_do_buscar{
     /* border: var(--bor); */
@@ -259,17 +264,20 @@ body{
 .to_do_proceso_texto{
     text-align: center;
     font-size: 20px;
+    width: 50%;
 }
 .to_do_proceso_cont_btn{
-    width: 30%;
+    width: 20%;
     height:35px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
+    
 }
 .to_do_btns{
     border: none;
-    background-color: transparent;
+    background-color: transparent; 
 }
 .fa-trash-can{
     font-size: 30px;
@@ -287,12 +295,30 @@ body{
 @media (max-width:1024px) {
 
     .cont_toDo{
-        gap: 20px;
+        gap: 18px;
     }
+    .to_do_encabezado{
+        width: 40%;
+        height: 100%;
+        gap: 15px;
+    }
+    
     .to_do_frase{
         width: 90%;
-        height: 16%;
+        height: 15%;
     }
+    .frase{
+        font-size: 16px;
+    }
+  
+    .to_do_date{
+        height: 20%;
+    }
+    .to_do_cajas{
+        height: 100%; 
+        gap: 25px;
+    }
+  
     .hora_cont,.fecha_cont{
         width: 100%
     }
@@ -301,7 +327,7 @@ body{
         margin-bottom: 35px;
     }
     .hora_span{
-        font-size: 48px;
+        font-size: 35px;
     }
     .fecha_spans{
         font-size: 18px;
@@ -309,9 +335,10 @@ body{
     }
    
 }
+
 @media (max-width:768px) {
     .conteiner_toDo{
-        height: 215vh;  
+        height: 185vh;  
     }
     .cont_toDo{
         flex-direction: column;
@@ -346,7 +373,7 @@ body{
         font-size: 30px; 
     }
     .hora_span{
-        font-size: 68px;
+        font-size: 40px;
     }
     
     .hora_cont,.fecha_cont{
@@ -366,10 +393,10 @@ body{
         height: 60%;
     }
      .hora_span{
-        font-size: 40px;
+        font-size: 20px;
     }
     .fecha_spans{
-        font-size: 25px;
+        font-size: 18px;
 
     }
     .frase{
@@ -384,6 +411,9 @@ body{
     }
     .to_do_caja_procceso,.to_do_caja_finalizado{
         background-color:rgba(255, 255, 255, 0.664);
+    }
+    .to_do_proceso_cont_btn{
+        gap: 15px;
     }
 
 }
