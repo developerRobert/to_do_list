@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO_DO</title>
+    <link rel="stylesheet" href="../to_do_list/archivosCss/index.css">
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="../to_do_list/archivosjs/index.js"></script>
+</head>
+<body>
+    <div class="conteiner_toDo">
+        <div class="cont_toDo">
+            <div class="to_do_encabezado">
+                <figure class="to_do_img"> 
+                    <img src="../to_do_list/img/todo1.jpg" alt="" class="img" >
+                    <h1 class="to_do_titulo">TO DO</h1>
+                </figure>
+                <div class="to_do_frase">
+                    <p class="frase">"Utiliza la imaginacion para ispirarte y lograr lo inalcanzable"</p>
+                </div>
+                <div class="to_do_date">
+                    <div class="fecha">
+                        <div class="fecha_cont">
+                            <span class="fecha_spans vista_dia_semana"></span>
+                            <span class="fecha_spans vista_dia"></span> 
+                            <span class="fecha_spans vista_mes"></span>
+                            <span class="fecha_spans vista_ano"></span>
+
+                        </div>
+                    </div>
+                    <div class="horas">
+                        <div class="hora_cont">
+                            <span class=" hora_span  vista_hora"></span>
+                            <span class=" hora_span  vista_minutos"></span>
+                            <span class=" hora_span vista_segundos"></span>
+                            <span class=" hora_span  vista_ampm"></span>
+
+                        </div>  
+                    </div>
+                    
+                </div>
+                <div class="To_do_buscar">
+                    <input type="text" placeholder=" Ingrese su Actividad" class="input">
+                    <a href=""><i class="fa-regular fa-square-plus"></i></a>
+                </div>
+            </div>
+
+            <div class="to_do_cajas">
+                    <nav class="to_do_nav">
+                        <ul class="to_do_ul">
+                            <li class="to_do_li"><button class="to_do_btn  active">Todas</button></li>
+                            <li class="to_do_li"><button class="to_do_btn">En Proceso</button></li>
+                            <li class="to_do_li"><button class="to_do_btn">Finalizados</button></li>
+                            <span class="to-do_span"></span>
+                        </ul>
+                    </nav>
+                    
+                    <div class="to_do_tareas">
+                        <div class="to_do_caja_procceso">
+                            <h1 class="to_do_caja_proceso_titulo">Proceso</h1>
+                            <div class="to_do_proceso_cont">
+                                <input type="checkbox" class="to_do_proceso_input">
+                                <p class="to_do_proceso_texto">descripcion</p>
+                                    <div class="to_do_proceso_cont_btn">
+                                        <button class="to_do_btns btn_eliminar"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="to_do_btns btn_editar"><i class="fa-regular fa-pen-to-square"></i></button>
+                                    </div>
+                            </div>
+
+                        </div> 
+                        <div class="to_do_caja_finalizado">
+                            <h1 class="to_do_caja_proceso_titulo to_do_finalizado_titulo">Finalizado</h1>
+                            <div class="to_do_proceso_cont   to_do_finalizado_cont">
+                                <input type="checkbox" class="to_do_proceso_input  to_do_finalizado_input">
+                                <p class="to_do_proceso_texto  to_do_finalizado_texto">descripcion</p>
+                                    <div class="to_do_proceso_cont_btn  to_do_finalizado_cont_btn">
+                                        <button class="to_do_btns btn_eliminar_final"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="to_do_btns btn_editar_final"><i class="fa-regular fa-pen-to-square"></i></button>
+                                    </div>
+
+                        </div> 
+
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
