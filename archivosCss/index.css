@@ -419,22 +419,21 @@ body{
     .to_do_encabezado{
         width: 100%;
         height: 50%;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .to_do_img{
         height: 150px;
         margin-top: 6px;
     }
     .to_do_date{
-        height: 20%;
-        width: 70%;
-        margin-top: 45px;
+        height: 40%;
+        margin-top: 50px;
     }
     .input{
-        height: 40px;
+        height: 50px;
     }
     .fa-square-plus{
-        font-size: 45px;
+        font-size: 48px;
     }
      .hora_span{
         font-size: 20px;
@@ -445,12 +444,14 @@ body{
     }
     .to_do_frase{
         height: 8%;
+        margin-top: 10px;
     }
     .frase{
         font-size: 19px ;
     }
     .fecha_cont,.hora_cont{
         width: 100%; 
+      
     }
     .to_do_cajas{
         width: 100%;
