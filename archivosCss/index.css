@@ -184,7 +184,7 @@ body{
     height: 95%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     gap: 15px;
 }
@@ -409,7 +409,7 @@ body{
 }
 @media (max-width:425px) {
     .conteiner_toDo{
-        height: 150vh;  
+        height: 160vh;  
     }
     .cont_toDo{
         height: 100%;
@@ -426,13 +426,13 @@ body{
     }
     .to_do_date{
         height: 35%;
-        margin-top: 25px;
+        margin-top: 30px;
     }
     .input{
-        height: 30px;
+        height: 40px;
     }
     .fa-square-plus{
-        font-size: 40px;
+        font-size: 45px;
     }
      .hora_span{
         font-size: 20px;
@@ -445,18 +445,21 @@ body{
         height: 8%;
     }
     .frase{
-        font-size: 17px ;
+        font-size: 19px ;
     }
     .to_do_cajas{
         width: 100%;
+        /* border: var(--bor); */
+        height: 50%;
     }
     .to_do_tarea_cont{
         width: 100%;
         height: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 25px;
     }
     .to_do_nav{
-        height: 40px;
+        height: 45px;
     }
     .to_do_ul{
         justify-content: center;
