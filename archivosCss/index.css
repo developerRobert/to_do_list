@@ -413,12 +413,13 @@ body{
     }
     .cont_toDo{
         height: 100%;
-        gap: 15px;
+        gap: 10px;
     }
 
     .to_do_encabezado{
         width: 100%;
         height: 50%;
+        margin-top: 10px;
     }
     .to_do_img{
         height: 150px;
@@ -446,6 +447,11 @@ body{
     }
     .frase{
         font-size: 19px ;
+    }
+    .fecha_cont,.hora_cont{
+        width: 70%;
+      
+       
     }
     .to_do_cajas{
         width: 100%;
