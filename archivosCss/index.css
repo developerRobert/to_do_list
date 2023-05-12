@@ -456,11 +456,11 @@ body{
         justify-content: space-evenly;
     }
     .to_do_nav{
-        height: 30px;
+        height: 40px;
     }
     .to_do_ul{
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
     }
     .to_do_caja_proceso_titulo{
         padding: 1px;
