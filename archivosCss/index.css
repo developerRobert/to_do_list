@@ -426,8 +426,9 @@ body{
         margin-top: 6px;
     }
     .to_do_date{
-        height: 35%;
-        margin-top: 30px;
+        height: 20%;
+        width: 70%;
+        margin-top: 45px;
     }
     .input{
         height: 40px;
@@ -449,13 +450,10 @@ body{
         font-size: 19px ;
     }
     .fecha_cont,.hora_cont{
-        width: 60%;
-      
-       
+        width: 100%; 
     }
     .to_do_cajas{
         width: 100%;
-        /* border: var(--bor); */
         height: 50%;
     }
     .to_do_tarea_cont{
