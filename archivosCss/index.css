@@ -348,11 +348,11 @@ body{
 
 @media (max-width:768px) {
     .conteiner_toDo{
-        height: 185vh;  
+        height: max-content;  
     }
     .cont_toDo{
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
     .to_do_encabezado{
         width: 95%;
@@ -419,7 +419,7 @@ body{
     .to_do_encabezado{
         width: 100%;
         height: 50%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .to_do_img{
         height: 150px;
@@ -427,10 +427,10 @@ body{
     }
     .to_do_date{
         height: 40%;
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .input{
-        height: 50px;
+        height: 40px;
     }
     .fa-square-plus{
         font-size: 48px;
@@ -496,7 +496,8 @@ body{
 }
 @media (max-width:375px) {
     .cont_toDo{
-        gap: 20px;
+        gap: 15px;
+        border: var(--bor);
     }
     .hora_span{
         font-size: 35px;
@@ -509,7 +510,13 @@ body{
         font-size: 16px ;
     }
     .to_do_ul{
-        gap: 6px;
+        gap: 8px;
+    }
+    .input{
+        height: 30px;
+    }
+    .fa-square-plus{
+        font-size: 38px;
     }
     
 }
