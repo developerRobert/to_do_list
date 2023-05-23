@@ -22,7 +22,7 @@ body{
 
 .conteiner_toDo{
     /* border: var(--bor); */
-    width: 95%;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -153,7 +153,13 @@ body{
     font-size: 50px;
     color: black;
 }
-
+.to_do_buscar_btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50px;
+    height: max-content;
+}
 
 
 
@@ -300,19 +306,158 @@ body{
     
 }
 
+/* ________________________ */
+.cont_mensaje{
+    display:none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    top: 0;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.cont_modal{
+    width: 40%;
+    height: 50%;
+    background-color: rgba(240, 248, 255, 0.76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+   
+
+}
+.textos{
+    font-size: 18px;
+    text-align: center;
+}
+.fa-circle-xmark{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 40px;
+}
+.cont_modal_texto{
+    border: var(--bor);
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ________________________________ */
+.cont_modal_confirmar{
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+.cont_modal_confirmar_btns{
+    width: 86%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.confirmar_btns{
+    border: none;
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+.aceptar{
+    background-color: rgba(0, 128, 0, 0.829);
+}
+.Cancelar{
+    background-color: gray;
+
+}
+/* _____________________________ */
+.cont_modal_editar{
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.cont_editar{
+    width: 40%;
+    height: 55%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.modal_edit{
+    border: var(--bor);
+    width: 90%;
+    height: 45%;
+    margin-top: 10px;
+}
+.modal_editar_btns{
+    border: var(--bor);
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.editar_btns{
+    border: none;
+    width:40%;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+.actualizar{
+    background-color: rgba(0, 0, 255, 0.863);
+}
+.cancelar{
+    background-color: rgba(255, 0, 0, 0.712);
+    /* background-color: gray; */
+}
+
 /* ____________media Query_______________________ */
 
 @media (max-width:1024px) {
 
+    .conteiner_toDo{
+        height: 110vh;
+    }
     .cont_toDo{
-        gap: 18px;
+        gap: 15px;
+        height: 95%;
     }
     .to_do_encabezado{
-        width: 40%;
-        height: 100%;
+        width: 36%;
+        height: 90%;
         gap: 15px;
     }
-    
+    .To_do_buscar{
+     margin-top: 25px;
+    }
+    .to_do_cajas{
+        height: 90%;
+    }
+    .to_do_tareas{
+        height: 95%;
+        width: 95%;
+    }
     .to_do_frase{
         width: 90%;
         height: 15%;
@@ -324,11 +469,8 @@ body{
     .to_do_date{
         height: 20%;
     }
-    .to_do_cajas{
-        height: 100%; 
-        gap: 25px;
-    }
-  
+    
+
     .hora_cont,.fecha_cont{
         width: 100%
     }
@@ -346,31 +488,38 @@ body{
    
 }
 
-@media (max-width:768px) {
+@media (max-width:900px) {
     .conteiner_toDo{
         height: max-content;  
     }
     .cont_toDo{
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+        height:95%;
     }
     .to_do_encabezado{
-        width: 95%;
-        height: 75%;
+        width: 90%;
+        height: 550px;
+        margin-top: 3px;
+    }
+    .to_do_cajas{
+        width: 90%;
+        height: 450px;
     }
     .frase{
         font-size: 23px;
         color: black;
     }
     .to_do_date{
-        height: 160px;
+        height: 200px;
         gap: 6px;
+        margin-top: 20px;
+    }
+    .to_do_frase{
+        margin-top: 20px;
     }
        
-    .to_do_cajas{
-        width: 95%;
-        height: 70%;
-    }
+    
     .to_do_nav{
         margin: 20px auto;
         
@@ -380,10 +529,10 @@ body{
     }
     .fecha_spans,.hora_span{
         color: black; 
-        font-size: 30px; 
+        font-size: 25px; 
     }
     .hora_span{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     .hora_cont,.fecha_cont{
@@ -409,26 +558,31 @@ body{
 }
 @media (max-width:425px) {
     .conteiner_toDo{
-        height: 160vh;  
+    
     }
     .cont_toDo{
-        height: 100%;
-        gap: 10px;
+        gap: 5px;
     }
 
     .to_do_encabezado{
-        width: 100%;
-        height: 50%;
-        margin-top: 10px;
+        width: 95%;
+        height: 90%;
     }
     .to_do_img{
         height: 150px;
         margin-top: 6px;
     }
     .to_do_date{
-        height: 40%;
-        margin-top: 25px;
+        height: 86px;
     }
+    .to_do_frase{
+        /* height: 8%; */
+        margin-top: 6px;
+    }
+    .To_do_buscar{
+        margin-top: 10px;
+    }
+
     .input{
         height: 40px;
     }
@@ -442,10 +596,7 @@ body{
         font-size: 18px;
 
     }
-    .to_do_frase{
-        height: 8%;
-        margin-top: 10px;
-    }
+   
     .frase{
         font-size: 19px ;
     }
@@ -454,15 +605,16 @@ body{
       
     }
     .to_do_cajas{
-        width: 100%;
-        height: 50%;
+        width: 95%;
+        height: 340px;
     }
     .to_do_tarea_cont{
         width: 100%;
         height: 100%;
         justify-content: center;
-        gap: 25px;
+        gap: 8px;
     }
+   
     .to_do_nav{
         height: 45px;
     }
@@ -478,7 +630,7 @@ body{
 
     .to_do_caja_procceso,.to_do_caja_finalizado{
         background-color:rgba(255, 255, 255, 0.664);
-        height: 30%;
+        height: 48%;
     }
     .to_do_proceso_cont_btn{
         gap: 25px;
@@ -496,11 +648,10 @@ body{
 }
 @media (max-width:375px) {
     .cont_toDo{
-        gap: 15px;
-        border: var(--bor);
+        gap: 5px;
     }
     .hora_span{
-        font-size: 35px;
+        font-size: 28px;
     }
     .fecha_spans{
         font-size: 20px;
@@ -510,13 +661,13 @@ body{
         font-size: 16px ;
     }
     .to_do_ul{
-        gap: 8px;
+        gap: 10px;
     }
     .input{
-        height: 30px;
+        height: 45px;
     }
     .fa-square-plus{
-        font-size: 38px;
+        font-size: 50px;
     }
     
 }
